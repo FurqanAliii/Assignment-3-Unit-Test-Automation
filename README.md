@@ -1,5 +1,17 @@
 # Scientific Calculator
 
+<div align="right">
+
+[![CI](https://github.com/SagarBiswas-MultiHAT/PyCalculator/actions/workflows/python-ci.yml/badge.svg)](https://github.com/SagarBiswas-MultiHAT/PyCalculator/actions)
+&nbsp;
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+&nbsp;
+[![Tests](https://github.com/SagarBiswas-MultiHAT/PyCalculator/actions/workflows/python-ci.yml/badge.svg)](https://github.com/SagarBiswas-MultiHAT/PyCalculator/actions)
+&nbsp;
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+</div>
+
 A modern, safe scientific calculator written in Python using Tkinter. The project includes a secure expression evaluator (trigonometric functions operate in degrees), a responsive GUI, unit tests, and a GitHub Actions CI workflow so tests run automatically on push and pull requests.
 
 This repository is intentionally small and designed for learning, experimenting, and easy contribution.
