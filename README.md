@@ -10,6 +10,20 @@
 &nbsp;
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+---
+<br>
+
+</div>
+
+
+
+<div align=center>
+
+![](https://imgur.com/KjvwdvN.png)
+
+---
+<br>
+
 </div>
 
 A modern, safe scientific calculator written in Python using Tkinter. The project includes a secure expression evaluator (trigonometric functions operate in degrees), a responsive GUI, unit tests, and a GitHub Actions CI workflow so tests run automatically on push and pull requests.
@@ -36,6 +50,13 @@ Prerequisites
 
 - Python 3.10 or newer installed.
 - (Optional) Create and activate a virtual environment.
+
+Run the GUI
+```bash
+python Calculator.py
+```
+
+### Dev
 
 Install (optional development deps)
 
