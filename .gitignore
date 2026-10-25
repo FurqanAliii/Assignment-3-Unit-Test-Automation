@@ -2,3 +2,12 @@ __pycache__/
 .pytest_cache/
 .venv/
 env/
+# Python virtual environments
+myenv/
+.venv/
+
+# Test artifacts
+.pytest_cache/
+__pycache__/
+*.py[cod]
+

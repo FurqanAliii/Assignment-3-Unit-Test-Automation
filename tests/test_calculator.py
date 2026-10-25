@@ -33,3 +33,28 @@ def test_invalid_identifier_raises():
     ev = SafeEvaluator()
     with pytest.raises(ValueError):
         ev.evaluate("unknown_name")
+
+@pytest.mark.parametrize("expression, expected", [
+    ("2+3", 5),
+    ("10-4", 6),
+    ("3*4", 12),
+    ("10/2", 5),
+    ("2^3", 8),
+    ("10%3", 1),
+    ("-5+2", -3),
+    ("sqrt(0)", 0),
+    ("sqrt(1)", 1),
+])
+def test_valid_expression_partitions(expression, expected):
+    evaluator = SafeEvaluator()
+    assert evaluator.evaluate(expression) == expected
+
+@pytest.mark.parametrize("expression", [
+    "unknown_name",
+    "2 > 1",
+    "'hello'",
+])
+def test_invalid_expression_partitions(expression):
+    evaluator = SafeEvaluator()
+    with pytest.raises((ValueError, TypeError)):
+        evaluator.evaluate(expression)
